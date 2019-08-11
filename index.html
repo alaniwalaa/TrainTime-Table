@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" src="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Train Time Table</title>
+</head>
+
+<body>
+    <!-- Link to Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <div class="container">
+        <div class="header-bar">
+            <!-- jumbotron for the header -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4" style="text-align: center"> Anytime is a Train Time </h1>
+                    <p class="lead" style="text-align: center">Choo Choo .. Chee Chee .. </p>
+                </div>
+            </div>
+        </div>
+        <!-- train time table -->
+        <div class="first-timetable">
+            <!-- On rows -->
+            <tr class="table-dark">Current Train Schedule </tr>
+            <table class="table" style="border: 2px solid black">
+                <thead class="thead">
+                    <tr>
+                        <th scope="col">Train Name </th>
+                        <th scope="col">Destination </th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival </th>
+                        <th scope="col">Minutes Away </th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Trenton Express </td>
+                        <td>Trenton </td>
+                        <td>3 </td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td>Oregon Train </td>
+                        <td>Salem, Oregon </td>
+                        <td>15</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Midnight Carriage </td>
+                        <td>Philadelpha </td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sing Sing Caravan </td>
+                        <td>Atlanta </td>
+                        <td>20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Boston Bus </td>
+                        <td>Boston </td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>California Caravan </td>
+                        <td>San Francisco </td>
+                        <td>15</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Analben's Train </td>
+                        <td>Florida </td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="second-timetble">
+            <tr class="table-dark">Add Train </tr>
+            <table class="table" style="border: 2px solid black">
+                <thead class="thead">
+                    <tr>
+                        <td>Train Name
+                            <input type="text" name="Train Name" id="train-name" class="w-100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Destination
+                            <input type="text" name="Destination" id="destination" class="w-100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Train Time (HH:mm - military time)
+                            <input type="text" name="First Train Time" id="first-train-time" class="w-100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Frequency (min)
+                            <input type="text" name="Frequency" id="frequency" class="w-100">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
